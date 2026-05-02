@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: crustcloud-production-planner
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:crustclouddb}
+    username: ${DB_USER:crustcloud}
+    password: ${DB_PASSWORD:crustcloud}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  port: ${PORT:8080}
+
+app:
+  jwt:
+    secret: ${JWT_SECRET:your-secret-key-at-least-32-characters-long}
+    expiration: 86400000
+
+logging:
+  level:
+    com.crustcloud: INFO
+    org.springframework.security: DEBUG
