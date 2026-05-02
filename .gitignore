@@ -1,0 +1,47 @@
+# ========================
+# Maven build output
+# ========================
+target/
+*.class
+*.jar
+*.war
+*.ear
+!**/test/**/*.jar
+
+# ========================
+# Maven wrapper (optional - keep if using ./mvnw)
+# ========================
+.mvn/wrapper/maven-wrapper.jar
+
+# ========================
+# Environment / Secrets
+# ========================
+.env
+.env.local
+.env.*.local
+
+# ========================
+# IDE - IntelliJ
+# ========================
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# ========================
+# IDE - VS Code
+# ========================
+.vscode/
+
+# ========================
+# OS
+# ========================
+.DS_Store
+Thumbs.db
+
+# ========================
+# Logs
+# ========================
+*.log
+logs/
