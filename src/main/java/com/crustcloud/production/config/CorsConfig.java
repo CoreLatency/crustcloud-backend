@@ -16,9 +16,10 @@ public class CorsConfig {
         CorsConfiguration config = new CorsConfiguration();
 
         config.setAllowedOrigins(Arrays.asList(
-            "http://localhost:3000",
-            "http://localhost:5173",
-            "http://frontend:3000"
+                "http://localhost:3000",
+                "http://localhost:5173",
+                "http://frontend:3000",
+                "https://crustcloud-frontend.onrender.com"
         ));
 
         config.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"));
